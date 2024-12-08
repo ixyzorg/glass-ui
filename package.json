@@ -1,0 +1,16 @@
+{
+  "name": "glass-ui-monorepo",
+  "private": true,
+  "packageManager": "pnpm@9.12.1",
+  "description": "GlassUI is a modern and elegant UI library inspired by the transparency and sleekness of glass. It embodies clarity, simplicity, and flexibility, offering a seamless blend of aesthetic appeal and robust functionality.",
+  "scripts": {},
+  "author": "Mason  <m@ixyz.org> (https://github.com/ixyzorg)",
+  "license": "ISC",
+  "dependencies": {
+    "@ixyz/components": "workspace:^",
+    "@ixyz/docs": "workspace:^",
+    "@ixyz/play": "workspace:^",
+    "@ixyz/theme-chalk": "workspace:^",
+    "@ixyz/utils": "workspace:^"
+  }
+}

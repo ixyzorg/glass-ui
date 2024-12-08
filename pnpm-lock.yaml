@@ -1,0 +1,35 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@ixyz/components':
+        specifier: workspace:^
+        version: link:packages/components
+      '@ixyz/docs':
+        specifier: workspace:^
+        version: link:docs
+      '@ixyz/play':
+        specifier: workspace:^
+        version: link:play
+      '@ixyz/theme-chalk':
+        specifier: workspace:^
+        version: link:packages/theme-chalk
+      '@ixyz/utils':
+        specifier: workspace:^
+        version: link:packages/utils
+
+  docs: {}
+
+  packages/components: {}
+
+  packages/theme-chalk: {}
+
+  packages/utils: {}
+
+  play: {}
