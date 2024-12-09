@@ -3,7 +3,13 @@
   "private": true,
   "packageManager": "pnpm@9.12.1",
   "description": "GlassUI is a modern and elegant UI library inspired by the transparency and sleekness of glass. It embodies clarity, simplicity, and flexibility, offering a seamless blend of aesthetic appeal and robust functionality.",
-  "scripts": {},
+  "scripts": {
+    "play:dev": "pnpm -C play dev",
+    "format": "prettier --write --cache .",
+    "lint": "eslint .",
+    "lint:fix": "pnpm run lint --fix",
+    "prepare": "husky"
+  },
   "author": "Mason  <m@ixyz.org> (https://github.com/ixyzorg)",
   "license": "ISC",
   "dependencies": {
@@ -12,5 +18,25 @@
     "@ixyz/play": "workspace:^",
     "@ixyz/theme-chalk": "workspace:^",
     "@ixyz/utils": "workspace:^"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.13.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "prettier": "3.4.2",
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": "pnpm lint:fix"
   }
 }
